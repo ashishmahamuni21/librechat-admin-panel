@@ -1,0 +1,13 @@
+{{- if .Values.podDisruptionBudget.enabled }}
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "librechat-admin-panel.fullname" . }}
+  labels:
+    {{- include "librechat-admin-panel.labels" . | nindent 4 }}
+spec:
+  minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
+  selector:
+    matchLabels:
+      {{- include "librechat-admin-panel.selectorLabels" . | nindent 6 }}
+{{- end }}

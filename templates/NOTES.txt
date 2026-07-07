@@ -1,0 +1,9 @@
+LibreChat admin panel has been deployed.
+
+Service:
+  {{ include "librechat-admin-panel.fullname" . }}:{{ .Values.service.port }}
+
+Required configuration:
+  - SESSION_SECRET must come from .Values.secret or .Values.existingSecretName.
+  - env.VITE_API_BASE_URL should point to the browser-facing LibreChat URL.
+  - LibreChat itself should set ADMIN_PANEL_URL to this admin panel's public URL for SSO callbacks.
