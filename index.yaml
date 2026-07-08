@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  librechat-admin-panel:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-07-08T10:15:28.630574111Z"
+    description: A Helm chart for deploying the standalone LibreChat admin panel.
+    digest: 6abcf232cc71c6732408ff850de309482cca1b374c57ef07ea2b09e0cb6ae108
+    home: https://github.com/ClickHouse/librechat-admin-panel
+    keywords:
+    - librechat
+    - admin-panel
+    - ai
+    maintainers:
+    - name: Ashish Mahamuni
+    name: librechat-admin-panel
+    sources:
+    - https://github.com/ClickHouse/librechat-admin-panel
+    type: application
+    urls:
+    - librechat-admin-panel-0.2.0.tgz
+    version: 0.2.0
+generated: "2026-07-08T10:15:28.629611673Z"
