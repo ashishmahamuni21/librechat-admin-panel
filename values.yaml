@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   registry: ghcr.io
-  repository: clickhouse/librechat-admin-panel
+  repository: ashishmahamuni21/librechat-admin-panel
   tag: latest
   pullPolicy: IfNotPresent
 
